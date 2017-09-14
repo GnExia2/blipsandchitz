@@ -6,14 +6,11 @@ var mainState = {
         // That's where we load the images and sounds
 
         // Load the bird sprite
-        game.load.image('bird', './public/images/flappybird/bird.png');
-        game.load.image('pipe', './public/images/flappybird/pipe.png');
+        game.load.image('bird', '../images/assets/flappybird/bird.png');
+        game.load.image('pipe', '../images/assets/flappybird/pipe.png');
     },
 
     create: function() {
-        // This function is called after the preload function
-        // Here we set up the game, display sprites, etc.
-        // Change the background color of the game to blue
 
         game.stage.backgroundColor = '#71c5cf';
 
@@ -138,7 +135,7 @@ var mainState = {
 };
 
 // Initialize Phaser, and create a 400px by 490px game
-var game = new Phaser.Game(400, 490);
+var game = new Phaser.Game(400, 490, {preload:mainState.preload, create:mainState.create});
 
 // Add the 'mainState' and call it 'main'
 game.state.add('main', mainState);

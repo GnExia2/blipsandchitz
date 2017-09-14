@@ -1,7 +1,9 @@
 // require mongoose and connect it to the localhost:db
 let mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/blipsandchitz');
+// mongoose.connect('mongodb://localhost/blipsandchitz');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/blipsandchitz', {useMongoClient: true});
 
-module.exports.User = require("./user.js");
-module.exports.Post = require("./post.js");
-module.exports.Score = require("./score.js");
+
+module.exports.users = require("./user.js");
+module.exports.post = require("./post.js");
+module.exports.score = require("./score.js");
