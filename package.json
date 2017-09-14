@@ -6,6 +6,7 @@
   "dependencies": {
     "body-parser": "^1.18.1",
     "express": "^4.15.4",
+    "materialize-css": "^0.100.2",
     "mongod": "^2.0.0",
     "mongoose": "^4.11.11",
     "nodemon": "^1.12.0"
