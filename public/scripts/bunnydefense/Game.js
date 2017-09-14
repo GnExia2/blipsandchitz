@@ -1,4 +1,4 @@
-BunnyDefender.Game = function(game) {
+bunnydefense.Game = function(game) {
     this.totalBunnies;
     this.bunnyGroup;
     this.totalSpacerocks;
@@ -15,7 +15,7 @@ BunnyDefender.Game = function(game) {
     this.ding;
 };
 
-BunnyDefender.Game.prototype = {
+bunnydefense.Game.prototype = {
 
     create: function() {
         this.gameover = false;

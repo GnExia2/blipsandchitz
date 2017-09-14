@@ -1,10 +1,10 @@
-BunnyDefender.Preloader = function(game) {
+bunnydefense.Preloader = function(game) {
     this.preloadBar = null;
     this.titleText = null;
     this.ready = false;
 };
 
-BunnyDefender.Preloader.prototype = {
+bunnydefense.Preloader.prototype = {
 
 	preload: function () {
 		this.preloadBar = this.add.sprite(this.world.centerX, this.world.centerY, 'preloaderBar');

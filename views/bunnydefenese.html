@@ -7,10 +7,10 @@
     <link rel="icon" sizes="196x196" href="bunny.png">
 	<title>Bunny Defender</title>
     <script src="./scripts/bunnydefense/phaser.js"></script>
-    <script src="./scripts/bunnydefenseBoot.js"></script>
-    <script src="./scripts/bunnydefensePreloader.js"></script>
-    <script src="./scripts/bunnydefenseStartMenu.js"></script>
-    <script src="./scripts/bunnydefenseGame.js"></script>
+    <script src="./scripts/bunnydefense/Boot.js"></script>
+    <script src="./scripts/bunnydefense/Preloader.js"></script>
+    <script src="./scripts/bunnydefense/StartMenu.js"></script>
+    <script src="./scripts/bunnydefense/Game.js"></script>
 	<style>
 		body {
 			padding: 0;
@@ -24,10 +24,10 @@
     <script type="text/javascript">
         window.onload = function() {
             var game = new Phaser.Game(540, 960, Phaser.AUTO, 'gameContainer');
-            game.state.add('Boot', BunnyDefender.Boot);
-            game.state.add('Preloader', BunnyDefender.Preloader);
-            game.state.add('StartMenu', BunnyDefender.StartMenu);
-            game.state.add('Game', BunnyDefender.Game);
+            game.state.add('Boot', bunnydefense.Boot);
+            game.state.add('Preloader', bunnydefense.Preloader);
+            game.state.add('StartMenu', bunnydefense.StartMenu);
+            game.state.add('Game', bunnydefense.Game);
             game.state.start('Boot');
         }
     </script>
