@@ -24,8 +24,25 @@ app.get('/', function (req, res) {
     console.log(__dirname);
 });
 
+app.get('/flappybird', function (req, res) {
+  res.sendFile('views/flappybird.html', {root:__dirname});
+  console.log(__dirname);
+});
+
+app.get('/bunnydefense', function (req, res) {
+  res.sendFile('views/bunnydefenese.html', {root:__dirname});
+  console.log(__dirname);
+});
 
 
+
+
+
+
+
+
+
+//create on port 3000
 
 app.listen(process.env.PORT || 3000, function (){
   console.log("Express Server is up and running on http://localhost:3000/");

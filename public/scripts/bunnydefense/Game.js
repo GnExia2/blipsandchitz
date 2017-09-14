@@ -25,11 +25,11 @@ BunnyDefender.Game.prototype = {
         this.totalBunnies = 20;
         this.totalSpacerocks = 13;
 
-        this.music = this.add.audio('game_audio');
-        this.music.play('', 0, 0.3, true);
-        this.ouch = this.add.audio('hurt_audio');
-        this.boom = this.add.audio('explosion_audio');
-        this.ding = this.add.audio('select_audio');
+        // this.music = this.add.audio('game_audio');
+        // this.music.play('', 0, 0.3, true);
+        // this.ouch = this.add.audio('hurt_audio');
+        // this.boom = this.add.audio('explosion_audio');
+        // this.ding = this.add.audio('select_audio');
 
         this.buildWorld();
     },
