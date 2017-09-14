@@ -34,9 +34,14 @@ app.get('/bunnydefense', function (req, res) {
   console.log(__dirname);
 });
 
+//api routes
+app.get('/api', controllers.api.index);
 
+app.get('/api/posts', controllers.post.index);
 
+app.get('/api/scores', controllers.score.index);
 
+app.get('/api/user', controllers.user.index);
 
 
 
