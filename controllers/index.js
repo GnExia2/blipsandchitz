@@ -2,6 +2,9 @@
 let mongoose = require('mongoose');
 // mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/blipsandchitz', {useMongoClient: true});
 
-// module.exports.users = require("./user.js");
-// module.exports.post = require("./post.js");
-// module.exports.score = require("./score.js");
+// module.exports = {
+//   api: require('./apiController.js'),
+//   delays: require('./postController.js'),
+//   comments: require('./scoreController.js')
+//   user: require('./userController.js')
+// }
