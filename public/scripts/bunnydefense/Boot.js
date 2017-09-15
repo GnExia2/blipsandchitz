@@ -4,8 +4,8 @@ Bunnydefense.Boot = function(game) {};
 
 Bunnydefense.Boot.prototype = {
     preload: function() {
-        this.load.image('preloaderBar', './images/assets/Bunnydefense/loader_bar.png');
-        this.load.image('titleimage', './images/assets/Bunnydefense/TitleImage.png');
+        this.load.image('preloaderBar', './images/assets/bunnydefense/loader_bar.png');
+        this.load.image('titleimage', './images/assets/bunnydefense/TitleImage.png');
     },
 
     create: function() {
