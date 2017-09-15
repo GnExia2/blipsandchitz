@@ -11,15 +11,50 @@
     <script src="./scripts/Bunnydefense/Preloader.js"></script>
     <script src="./scripts/Bunnydefense/StartMenu.js"></script>
     <script src="./scripts/Bunnydefense/Game.js"></script>
-	<style>
-		body {
-			padding: 0;
-			margin: 0;
-			background-color: #000000;
-		}
-	</style>
+
 </head>
 <body>
+
+	<div class = 'links'>
+		<ul>
+			<li>
+				<div class='home'>
+					<div id = 'homepage'>
+						<a href="http://localhost:3000/">Home</a>
+					</div>
+				</div>
+			</li>
+		<li>
+			<div class='game1'>
+				<div id = 'flappybird'>
+					<a href="http://localhost:3000/flappybird">Flappy Bird</a>
+				</div>
+			</div>
+		</li>
+			<li>
+				<div class='login'>
+					<div id = 'userindex'>
+						<a href="http://localhost:3000/landingpage">User</a>
+					</div>
+				</div>
+			</li>
+		<li>
+			<div class='userProfile'>
+				<div id = 'userprofile'>
+					<a href="http://localhost:3000/userprofile">My Profile</a>
+				</div>
+			</div>
+		</li>
+			<li>
+				<div class='game2'>
+					<div id = 'flappybird'>
+						<a href="http://localhost:3000/bunnydefense">Bunny Defense</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+
     <div id="gameContainer"></div>
     <script type="text/javascript">
         window.onload = function() {
@@ -31,5 +66,6 @@
             game.state.start('Boot');
         }
     </script>
-</body>
+
+	</body>
 </html>
