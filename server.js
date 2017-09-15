@@ -29,10 +29,21 @@ app.get('/flappybird', function (req, res) {
   console.log(__dirname);
 });
 
-app.get('/bunnydefense', function (req, res) {
+app.get('/Bunnydefense', function (req, res) {
   res.sendFile('views/bunnydefenese.html', {root:__dirname});
   console.log(__dirname);
 });
+
+app.get('/userprofile', function (req, res) {
+  res.sendFile('views/userprofile.html', {root:__dirname});
+  console.log(__dirname);
+});
+
+app.get('/landingpage', function (req, res) {
+  res.sendFile('views/landingpage.html', {root:__dirname});
+  console.log(__dirname);
+});
+
 
 //api routes
 app.get('/api', controllers.api.index);

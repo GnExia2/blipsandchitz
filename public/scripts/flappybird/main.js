@@ -12,6 +12,8 @@ var mainState = {
 
     create: function() {
 
+        game.scale.pageAlignHorizontally = true;
+        // game.scale.pageAlignVertically = true;
         game.stage.backgroundColor = '#71c5cf';
 
         // Set the physics system
@@ -97,6 +99,9 @@ var mainState = {
     restartGame: function() {
         // Start the 'main' state, which restarts the game
         console.log('this is your final score', this.score)
+        if(this.score < 5){
+          console.log('you suck at this game')
+        }
         game.state.start('main');
     },
 

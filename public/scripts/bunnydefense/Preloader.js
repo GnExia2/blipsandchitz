@@ -1,10 +1,10 @@
-bunnydefense.Preloader = function(game) {
+Bunnydefense.Preloader = function(game) {
     this.preloadBar = null;
     this.titleText = null;
     this.ready = false;
 };
 
-bunnydefense.Preloader.prototype = {
+Bunnydefense.Preloader.prototype = {
 
 	preload: function () {
 		this.preloadBar = this.add.sprite(this.world.centerX, this.world.centerY, 'preloaderBar');
@@ -12,18 +12,18 @@ bunnydefense.Preloader.prototype = {
 		this.load.setPreloadSprite(this.preloadBar);
 		this.titleText = this.add.image(this.world.centerX, this.world.centerY-220, 'titleimage');
 		this.titleText.anchor.setTo(0.5, 0.5);
-        this.load.image('titlescreen', 'images/TitleBG.png');
-        this.load.bitmapFont('eightbitwonder', 'fonts/eightbitwonder.png', 'fonts/eightbitwonder.fnt');
-        this.load.image('hill', 'images/hill.png');
-        this.load.image('sky', 'images/sky.png');
-        this.load.atlasXML('bunny', 'images/spritesheets/bunny.png', 'images/spritesheets/bunny.xml');
-        this.load.atlasXML('spacerock', 'images/spritesheets/SpaceRock.png', 'images/spritesheets/SpaceRock.xml');
-        this.load.image('explosion', 'images/explosion.png');
-        this.load.image('ghost', 'images/ghost.png');
-        // this.load.audio('explosion_audio', 'audio/explosion.mp3');
-        // this.load.audio('hurt_audio', 'audio/hurt.mp3');
-        // this.load.audio('select_audio', 'audio/select.mp3');
-        // this.load.audio('game_audio', 'audio/bgm.mp3');
+        this.load.image('titlescreen', './images/assets/bunnydefense/TitleBG.png');
+        this.load.bitmapFont('eightbitwonder', './images/assets/bunnydefense/fonts/eightbitwonder.png', './images/assets/bunnydefense/fonts/eightbitwonder.fnt');
+        this.load.image('hill', './images/assets/bunnydefense/hill.png');
+        this.load.image('sky', './images/assets/bunnydefense/sky.png');
+        this.load.atlasXML('bunny', './images/assets/bunnydefense/spritesheets/bunny.png', './images/assets/bunnydefense/spritesheets/bunny.xml');
+        this.load.atlasXML('spacerock', './images/assets/bunnydefense/spritesheets/SpaceRock.png', './images/assets/bunnydefense/spritesheets/SpaceRock.xml');
+        this.load.image('explosion', './images/assets/bunnydefense/explosion.png');
+        this.load.image('ghost', './images/assets/bunnydefense/ghost.png');
+        this.load.audio('explosion_audio', './scripts/bunnydefense/audio/explosion.mp3');
+        this.load.audio('hurt_audio', './scripts/bunnydefense/audio/hurt.mp3');
+        this.load.audio('select_audio', './scripts/bunnydefense/audio/select.mp3');
+        this.load.audio('game_audio', './scripts/bunnydefense/audio/bgm.mp3');
 	},
 
 	create: function () {

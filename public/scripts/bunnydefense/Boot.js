@@ -1,11 +1,11 @@
-var bunnydefense = {};
+var Bunnydefense = {};
 
-bunnydefense.Boot = function(game) {};
+Bunnydefense.Boot = function(game) {};
 
-bunnydefense.Boot.prototype = {
+Bunnydefense.Boot.prototype = {
     preload: function() {
-        this.load.image('preloaderBar', 'images/loader_bar.png');
-        this.load.image('titleimage', 'images/TitleImage.png');
+        this.load.image('preloaderBar', './images/assets/Bunnydefense/loader_bar.png');
+        this.load.image('titleimage', './images/assets/Bunnydefense/TitleImage.png');
     },
 
     create: function() {

@@ -2,9 +2,11 @@
 
 let mongoose = require('mongoose'),
   Schema = mongoose.Schema;
+  Uawe = require('./user');
+
 
   let postSchema = new Schema({
-    //  name: User.name.id,
+     name: {type: Schema.Types.ObjectId, ref: 'User'},
      comment: String
   });
 

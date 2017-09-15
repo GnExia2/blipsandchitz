@@ -1,13 +1,14 @@
-bunnydefense.StartMenu = function(game) {
+Bunnydefense.StartMenu = function(game) {
     this.startBG;
     this.startPrompt;
     this.ding;
 }
 
-bunnydefense.StartMenu.prototype = {
+Bunnydefense.StartMenu.prototype = {
 
 	create: function () {
         this.ding = this.add.audio('select_audio');
+
 
 		startBG = this.add.image(0, 0, 'titlescreen');
 		startBG.inputEnabled = true;

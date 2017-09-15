@@ -4,13 +4,13 @@
 	<meta charset="utf-8">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width">
-    <link rel="icon" sizes="196x196" href="bunny.png">
+    <link rel="icon" sizes="196x196" href="./images/assets/Bunnydefense/bunny.png">
 	<title>Bunny Defender</title>
-    <script src="./scripts/bunnydefense/phaser.js"></script>
-    <script src="./scripts/bunnydefense/Boot.js"></script>
-    <script src="./scripts/bunnydefense/Preloader.js"></script>
-    <script src="./scripts/bunnydefense/StartMenu.js"></script>
-    <script src="./scripts/bunnydefense/Game.js"></script>
+    <script src="./scripts/Bunnydefense/phaser.js"></script>
+    <script src="./scripts/Bunnydefense/Boot.js"></script>
+    <script src="./scripts/Bunnydefense/Preloader.js"></script>
+    <script src="./scripts/Bunnydefense/StartMenu.js"></script>
+    <script src="./scripts/Bunnydefense/Game.js"></script>
 	<style>
 		body {
 			padding: 0;
@@ -24,10 +24,10 @@
     <script type="text/javascript">
         window.onload = function() {
             var game = new Phaser.Game(540, 960, Phaser.AUTO, 'gameContainer');
-            game.state.add('Boot', bunnydefense.Boot);
-            game.state.add('Preloader', bunnydefense.Preloader);
-            game.state.add('StartMenu', bunnydefense.StartMenu);
-            game.state.add('Game', bunnydefense.Game);
+            game.state.add('Boot', Bunnydefense.Boot);
+            game.state.add('Preloader', Bunnydefense.Preloader);
+            game.state.add('StartMenu', Bunnydefense.StartMenu);
+            game.state.add('Game', Bunnydefense.Game);
             game.state.start('Boot');
         }
     </script>
