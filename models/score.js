@@ -6,8 +6,8 @@ let mongoose = require('mongoose'),
 
   let scoreSchema = new Schema({
     name: {type: Schema.Types.ObjectId, ref: 'User'},
-   flappybirdscore: Number,
-   Bunnydefensescore: Number
+    flappyBirdScore: Number,
+    bunnyDefenseScore: Number
   });
 // create Schema
 
