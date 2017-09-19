@@ -32,10 +32,10 @@ https://trello.com/b/9MP38bv9/blips-and-chitz
 
 <h4>Descriptions of any unsolved problems or future features.</h4>
 <h5>Bugs</h5>
--unknown bug that doesn't allow submit score to db (have a theory that it might be the jquery targeting wrong item)
+-unknown bug that doesn't allow submit score to db (have a theory that it might be the jquery targeting wrong item)<br>
 -Flappy bird not applying to the specific place and always rendering at bottom
 
 <h5>Future Features</h5>
--Create Users and link them to score instead of having user manually input
--Login/Signup for Users
--allow users to upload their own games
+-Create Users and link them to score instead of having user manually input<br>
+-Login/Signup for Users<br>
+-allow users to upload their own games<br>
