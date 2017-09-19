@@ -1,6 +1,5 @@
 var db = require('../models');
 
-
 function index(req, res) {
   db.score.find({}, function(err, allScores){
     res.json(allScores);
@@ -8,7 +7,7 @@ function index(req, res) {
 }
 
 function create(req, res){
-  var newDelay = {
+  var savedScore = {
     name: req.body.name,
     flappybirdscore: req.body.flappybirdscore,
     Bunnydefensescore: req.body.Bunnydefensescore

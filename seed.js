@@ -23,3 +23,23 @@ var userList =[];
     });
     console.log("created", user.length, "user");
   });
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  var scoreList =[];
+    scoreList.push({
+      name: 'Garrick',
+      flappyBirdScore: 14,
+      bunnyDefenseScore: 52
+    });
+
+  db.score.remove({}, function(err){
+      // code in here runs after all scores are removed
+    db.score.create(scoreList, function(err, score){
+      // code in here runs after all scores are created
+      if (err) { return console.log('ERROR', err); }
+      console.log("all scores:", score);
+      console.log("created", score.length, "score");
+      process.exit();
+    });
+  });

@@ -12,85 +12,35 @@
       <title>Blips and Chitz</title>
       <link rel="icon" type="image/png" href="./images/blipsandchitz-icon.png">
 
+      <script type="text/javascript" src="./scripts/app.js"></script>
+
+
     </head>
 
     <body>
+      <div class='background'>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="./scripts/materialize.min.js"></script>
+      <script type="text/javascript" src="./scripts/initialize.js"></script>
 
       <nav>
-        <div class="nav-wrapper">
+        <div class="nav-wrapper blue-grey darken-2">
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-          <a href="http://localhost:3000/" class="brand-logo">Blitz & Chitz</a>
+          <a href="http://localhost:3000/" class="brand-logo">Welcome To</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="http://localhost:3000/userprofile">Profile</a></li>
+            <li><a href="http://localhost:3000/landingpage">Game Center</a></li>
             <li><a href="http://localhost:3000/">Login</a></li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
             <li><a href="http://localhost:3000/userprofile">Profile</a></li>
             <li><a href="http://localhost:3000/">Login</a></li>
+            <li><a href="http://localhost:3000/bunnydefense">Bunny Defense</a></li>
+            <li><a href="http://localhost:3000/flappybird">Flappy Bird</a></li>
           </ul>
         </div>
       </nav>
 
-
-      <div class ="container">
-        <div class='header'>
-          <h1>BLIPS AND CHITZ!!!!!</h1>
-        </div>
-        <div class="row">
-          <form class="col s12">
-            <div class="row">
-              <div class="input-field col s6">
-                <input id="first_name" type="text" class="validate">
-                <label for="first_name">First Name</label>
-              </div>
-              <div class="input-field col s6">
-                <input id="last_name" type="text" class="validate">
-                <label for="last_name">Last Name</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <input id="password" type="password" class="validate">
-                <label for="password">Password</label>
-              </div>
-            </div>
-          </form>
-        </div>
       </div>
-
-    <div class='container'>
-      <div class = 'links'>
-        <div class='home'>
-          <div id = 'homepage'>
-            <a href="http://localhost:3000/">Home</a>
-          </div>
-        </div>
-        <div class='game1'>
-          <div id = 'flappybird'>
-            <a href="http://localhost:3000/flappybird">Flappy Bird</a>
-          </div>
-        </div>
-        <div class='login'>
-          <div id = 'userindex'>
-            <a href="http://localhost:3000/landingpage">User</a>
-          </div>
-        </div>
-        <div class='userProfile'>
-          <div id = 'userprofile'>
-            <a href="http://localhost:3000/userprofile">My Profile</a>
-          </div>
-        </div>
-        <div class='game2'>
-          <div id = 'flappybird'>
-            <a href="http://localhost:3000/bunnydefense">Bunny Defense</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
     </body>
   </html>

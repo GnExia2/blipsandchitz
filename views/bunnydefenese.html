@@ -19,21 +19,29 @@
     <script src="./scripts/bunnydefense/Preloader.js"></script>
     <script src="./scripts/bunnydefense/StartMenu.js"></script>
     <script src="./scripts/bunnydefense/Game.js"></script>
+		<script type="text/javascript" src="./scripts/app.js"></script>
+
 
 </head>
 <body>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="./scripts/materialize.min.js"></script>
+	<script type="text/javascript" src="./scripts/initialize.js"></script>
+
 
 	<nav>
-		<div class="nav-wrapper">
+		<div class="nav-wrapper blue-grey darken-2">
 			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-			<a href="http://localhost:3000/" class="brand-logo">Blitz & Chitz</a>
+			<a href="http://localhost:3000/" class="brand-logo">Bunny Defense</a>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a href="http://localhost:3000/userprofile">Profile</a></li>
+				<li><a href="http://localhost:3000/landingpage">Game Center</a></li>
 				<li><a href="http://localhost:3000/">Login</a></li>
 			</ul>
 			<ul class="side-nav" id="mobile-demo">
 				<li><a href="http://localhost:3000/userprofile">Profile</a></li>
 				<li><a href="http://localhost:3000/">Login</a></li>
+				<li><a href="http://localhost:3000/bunnydefense">Bunny Defense</a></li>
+				<li><a href="http://localhost:3000/flappybird">Flappy Bird</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -50,32 +58,44 @@
         }
     </script>
 
+<div class='score-form'>
+	<div class='container'>
+		<div class="row">
+	    <form class="col s12">
+	      <div class="row">
+	        <div class="input-field col s6">
+	          <input id="name" type="text" class="validate">
+	          <label for="name">Name</label>
+	      </div>
+	      <div class="row">
+	        <div class="input-field col s12">
+	          <input id="seconds" type="text" class="validate">
+	          <label for="seconds">Seconds Survived</label>
+	        </div>
+	      </div>
+	    </form>
+	  </div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="singlebutton"></label>
+			<div class="col-md-4">
+				<button id="singlebutton" name="singlebutton" type="submit" class="btn btn-primary waves-effect waves-light">Submit Score</button>
+			</div>
+		</div>
+	</div>
+</div>
 
+	<section class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<h2>Bunny Defense Leaderboard</h2>
+			</div>
+		</div>
 
+		<!-- albums container! -->
+		<div id='scores'></div>
 
-    <footer class="page-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Links</h5>
-            <ul>
-							<li><a class="grey-text text-lighten-3" href="http://localhost:3000/">Home</a></li>
-							<li><a class="grey-text text-lighten-3" href="http://localhost:3000/landingpage">landing page</a></li>
-							<li><a class="grey-text text-lighten-3" href="http://localhost:3000/flappybird">Flappy Bird</a></li>
-              <li><a class="grey-text text-lighten-3" href="http://localhost:3000/userprofile">Profile</a></li>
-              <li><a class="grey-text text-lighten-3" href="http://localhost:3000/bunnydefense">Bunny Defense</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-        © 2017 Copyright Text
-        </div>
-      </div>
-    </footer>
+	</section>
 
 	</body>
 </html>

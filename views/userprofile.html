@@ -1,32 +1,41 @@
-<h1>user profile</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./styles/materialize.min.css" />
+    <link type="text/css" rel="stylesheet" href="./styles/styles.css" />
 
-<div class = 'links'>
-  <div class='home'>
-    <div id = 'homepage'>
-      <a href="http://localhost:3000/">home</a>
-    </div>
-  </div>
-  <div class='game1'>
-    <div id = 'flappybird'>
-      <a href="http://localhost:3000/flappybird">Flappy Bird</a>
-    </div>
-  </div>
-  <div class='login'>
-    <div id = 'userindex'>
-      <a href="http://localhost:3000/landingpage">User</a>
-    </div>
-  </div>
-  <div class='userProfile'>
-    <div id = 'userprofile'>
-      <a href="http://localhost:3000/userprofile">My Profile</a>
-    </div>
-  </div>
-  <div class='game2'>
-    <div id = 'flappybird'>
-      <a href="http://localhost:3000/bunnydefense">Bunny Defense</a>
-    </div>
-  </div>
-</div>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Blips and Chitz</title>
+    <link rel="icon" type="image/png" href="./images/blipsandchitz-icon.png">
+
+  </head>
+
+  <body>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./scripts/materialize.min.js"></script>
+
+    <nav>
+      <div class="nav-wrapper blue-grey darken-2">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <a href="http://localhost:3000/" class="brand-logo">Blips & Chitz</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="http://localhost:3000/userprofile">Profile</a></li>
+          <li><a href="http://localhost:3000/">Login</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="http://localhost:3000/userprofile">Profile</a></li>
+          <li><a href="http://localhost:3000/">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <h1>Welcome to the Game Center</h1>
+
 
 <footer class="page-footer">
   <div class="container">
@@ -46,8 +55,9 @@
     </div>
   </div>
   <div class="footer-copyright">
-    <div class="container">
     © 2017 Copyright Text
-    </div>
   </div>
 </footer>
+
+  </body>
+</html>
