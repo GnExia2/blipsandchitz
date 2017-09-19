@@ -18,7 +18,9 @@ https://powerful-coast-71596.herokuapp.com/
 -clone project through link here https://github.com/GnExia2/blipsandchitz.git
 
 <h5>dependencies - how would another developer run your site locally?</h5>
--npm install after cloning to local
+-npm install after cloning to local<br>
+-mongodb<br>
+-nodemon<br>
 
 <h5>Link to your user stories - who are your users, what do they want, and why?</h5>
 -Users can login and save scores to their profile<br>
