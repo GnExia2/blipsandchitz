@@ -41,3 +41,4 @@ https://trello.com/b/9MP38bv9/blips-and-chitz
 -Create Users and link them to score instead of having user manually input<br>
 -Login/Signup for Users<br>
 -allow users to upload their own games<br>
+-have a different tabs for types of games within the game center<br>
