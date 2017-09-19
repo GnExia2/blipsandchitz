@@ -12,9 +12,9 @@ $(document).ready(function(){
     e.preventDefault();
     var formData = $(this).serialize();
     console.log('formData', formData);
-    $.post('/api/scores', formData, function(delay) {
+    $.post('/api/score', formData, function(delay) {
       console.log('score after POST', score);
-      renderDelay(score);  //render the server's response
+      renderScore(score);  //render the server's response
     });
     $(this).trigger("reset");
   });

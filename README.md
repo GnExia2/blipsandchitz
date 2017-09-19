@@ -7,21 +7,21 @@ https://powerful-coast-71596.herokuapp.com/
 -this app allows users to play games created by creator. the users can then comment and rate the games that are on the site
 
 <h5>A list of the technologies used</h5>
--javascript
--phaser
--HTML
--CSS
--Jquery
--ratings
+-javascript<br>
+-phaser<br>
+-HTML<br>
+-CSS<br>
+-Jquery<br>
+-ratings<br>
 
 <h5>A list of installation steps for the app itself and any</h5>
 -clone project through link here https://github.com/GnExia2/blipsandchitz.git
 
 <h5>dependencies - how would another developer run your site locally?</h5>
--npm install upon cloning to local
+-npm install after cloning to local
 
 <h5>Link to your user stories - who are your users, what do they want, and why?</h5>
--Users can login and save scores to their profile
+-Users can login and save scores to their profile<br>
 -Users can play games on the app
 
 <h5>Link to your wireframes – sketches of major views / interfaces in your application.</h5>
