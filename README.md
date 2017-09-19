@@ -1,7 +1,7 @@
 <h1>Blips & Chitz Readme</h1>
 
     <h5>A link to your hosted working app.</h5>
-
+      https://powerful-coast-71596.herokuapp.com/
 
     <h5>A paragraph-long description (elevator pitch) of your project.</h5>
     -this app allows users to play games created by creator. the users can then comment and rate the games that are on the site
