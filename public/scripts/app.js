@@ -35,19 +35,18 @@ $(document).ready(function(){
 function renderScore(score) {
   console.log('rendering score', score);
   var scoreHtml = (`
-    <div class="row delayclass" id="${score._id}" data-score-id="${score._id}">
-      <form id="${score._id}-update" action="#" onsubmit="return false" method="PUT" class="score-update-form" name="${delay._id}-update">
+    <div class="row scoreclass" id="${score._id}" data-score-id="${score._id}">
+      <form id="${score._id}-update" action="#" onsubmit="return false" method="PUT" class="score-update-form" name="${score._id}-update">
         <div class="col-md-10 col-md-offset-1">
           <div class="panel panel-default">
           <div class="panel-body">
-            <!-- begin delay internal row -->
             <div class='row'>
               <div class="col-md-6 col-xs-12">
                 <ul class="list-group">
                   <h4 class='inline-header'>name:</h4>
-                  <span id="${score._id}-destination" class='scoreData'>${score.name}</span>
+                  <span id="${score._id}-name" class='scoreData'>${score.name}</span>
                   <h4 class='inline-header'>flappybird:</h4>
-                  <span id="${score._id}-timeDelay" class='scoreData'>${score.score}</span>
+                  <span id="${score._id}-score" class='scoreData'>${score.score}</span>
                   </ul>
                 </div>
               </div>
@@ -57,7 +56,7 @@ function renderScore(score) {
       </div>
     </div>
   `);
-  $('#scores').append(delayHtml);
+  $('#scores').append(scoreHtml);
 };
 
 var Rating = require('rating');
