@@ -5,7 +5,7 @@
         <link rel="icon" type="image/png" href="../public/images/flappybird/bird.png">
 
         <script type="text/javascript" src="./scripts/flappybird/phaser.min.js"></script>
-        <script src="./scripts/flappybird/main.js"></script>
+        <!-- <script src="./scripts/flappybird/main.js"></script> -->
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Import materialize.css-->
@@ -23,11 +23,13 @@
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="./scripts/materialize.min.js"></script>
+      <script type="text/javascript" src="./scripts/initialize.js"></script>
+
 
       <nav>
-        <div class="nav-wrapper">
+        <div class="nav-wrapper blue-grey darken-2">
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-          <a href="http://localhost:3000/" class="brand-logo">Blitz & Chitz</a>
+          <a href="http://localhost:3000/" class="brand-logo">Blips & Chitz</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="http://localhost:3000/userprofile">Profile</a></li>
             <li><a href="http://localhost:3000/">Login</a></li>
@@ -35,51 +37,25 @@
           <ul class="side-nav" id="mobile-demo">
             <li><a href="http://localhost:3000/userprofile">Profile</a></li>
             <li><a href="http://localhost:3000/">Login</a></li>
+            <li><a href="http://localhost:3000/bunnydefense">Bunny Defense</a></li>
+            <li><a href="http://localhost:3000/flappybird">Flappy Bird</a></li>
           </ul>
         </div>
       </nav>
 
+      <div class='header'>
+        <h1>Flappy Bird</h1>
+      </div>
 
       <div id="birdGameContainer"></div>
-        <script type="text/javascript">
+        <script type="text/javascript" src="./scripts/flappybird/main.js">>
           window.onload = function(){
-            var game = new Phaser.Game(400, 490, Phase.AUTO, 'birdGameContainer');
+            var game = new Phaser.Game(400, 490, Phaser.AUTO, 'birdGameContainer');
             game.state.add('main', mainState.main);
             game.state.start('main');
           }
         </script>
 
-    <footer>
-      <div class='container'>
-        <div class = 'links'>
-          <div class='home'>
-            <div id = 'homepage'>
-              <a href="http://localhost:3000/">Home Page</a>
-            </div>
-          </div>
-          <div class='game1'>
-            <div id = 'flappybird'>
-              <a href="http://localhost:3000/flappybird">Flappy Bird</a>
-            </div>
-          </div>
-          <div class='login'>
-            <div id = 'userindex'>
-              <a href="http://localhost:3000/landingpage">Landing Page</a>
-            </div>
-          </div>
-          <div class='userProfile'>
-            <div id = 'userprofile'>
-              <a href="http://localhost:3000/userprofile">My Profile</a>
-            </div>
-          </div>
-          <div class='game2'>
-            <div id = 'flappybird'>
-              <a href="http://localhost:3000/bunnydefense">Bunny Defense</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
 
     </body>
 </html>
